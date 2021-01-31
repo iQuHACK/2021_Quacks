@@ -8,8 +8,8 @@ from qiskit.visualization import plot_state_paulivec, plot_state_hinton
 from qiskit.visualization import plot_state_qsphere
 
 def quantum_gen():
-    n = np.linspace(0,4,5) #Total amount of different quantum gates
-    nrand = np.random.randint(0,4,5) #Random generated identifiers for the quantum gates
+    n = np.linspace(0,3,4) #Total amount of different quantum gates
+    nrand = np.random.randint(0,4,4) #Random generated identifiers for the quantum gates
 
     #imulator = Aer.get_backend('qasm_simulator')
     circuit = QuantumCircuit(2,2)

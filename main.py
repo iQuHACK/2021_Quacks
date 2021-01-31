@@ -72,12 +72,15 @@ def juego():
 
     nrand = quantum_gen()
     card1 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
-    card2 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
-    card3 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
-    card4 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
+    card2 = pg.image.load('sprites/sprite' + str(nrand[1]) + '.png').convert()
+    card3 = pg.image.load('sprites/sprite' + str(nrand[2]) + '.png').convert()
+    card4 = pg.image.load('sprites/sprite' + str(nrand[3]) + '.png').convert()
+
+    print(nrand)
+
 
     #randomizar -> card[]
-    card = [card1, card2, card3, card4, card5]
+    card = [card1, card2, card3, card4]
     random.shuffle(card)
 
     rect1 = card[0].get_rect()

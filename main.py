@@ -2,7 +2,7 @@ import pygame as pg
 from pygame.locals import *
 import random
 from array import *
-#from TEST import rand_gen, quantum_sim
+from TEST import quantum_sim
 
 #Colors
 color_background = (0, 0, 0)

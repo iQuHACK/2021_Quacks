@@ -17,20 +17,9 @@ Which means the game has already started. In the folder in which you are working
 After placing the cards on the grids, press the button "check". This will generate images "try1.png" (the Bloch sphere created with your try) and "try2.png", which shows the result the player constructed. 
 
 
-## Future work
+## Future work - Stuff we would like to do but did not have enought time
 -Creating an option such that gates can also act on the first qubit
+
 -Omitting gate combinations that might result in the qubit not being changed at all
 
-
-
-* a clear title for your project,
-* a short abstract,
-* the motivation/goals for your project,
-* a description of the work you did, and
-* proposals for future work.
-
-You can find a potential README template in [one of last year's projects](https://github.com/iQuHACK/QuhacMan).
-
-Feel free to contact the staff with questions over our [event's slack](https://iquhack.slack.com), or via iquhack@mit.edu.
-
-Good luck!
+-Omitting entangled states, which cannot be represented by a sphere

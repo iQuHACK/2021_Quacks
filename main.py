@@ -1,5 +1,7 @@
 import pygame as pg
 from pygame.locals import *
+import random
+from array import *
 
 #Colors
 color_background = (0, 0, 0)
@@ -70,10 +72,14 @@ def juego():
     card3 = pg.image.load('sprites/sprite3.png').convert()
     card4 = pg.image.load('sprites/sprite4.png').convert()
 
-    rect1 = card1.get_rect()
-    rect2 = card2.get_rect()
-    rect3 = card3.get_rect()
-    rect4 = card4.get_rect()
+    #randomizar -> card[]
+    card = [card1, card2, card3, card4]
+    random.shuffle(card)
+
+    rect1 = card[0].get_rect()
+    rect2 = card[1].get_rect()
+    rect3 = card[2].get_rect()
+    rect4 = card[3].get_rect()
 
     #Poner la carta 20 pixeles sobre el limite inferior, a.k.a esquina superior en: (largo total) - (largo de carta) - 20
     rect1.move_ip( (20 - rect1[0]), (height - 20 - rect1[3] - rect1[1]) ) 
@@ -133,10 +139,10 @@ def juego():
                     rect4.move_ip(event.rel)
         
             screen.blit(txt_back, (100 - txt_back.get_rect()[2]/2, 45 - txt_back.get_rect()[3]/2))
-            screen.blit(card1, rect1)
-            screen.blit(card2, rect2)
-            screen.blit(card3, rect3)
-            screen.blit(card4, rect4)
+            screen.blit(card[0], rect1)
+            screen.blit(card[1], rect2)
+            screen.blit(card[2], rect3)
+            screen.blit(card[3], rect4)
             pg.display.update()
 
 def creditos():

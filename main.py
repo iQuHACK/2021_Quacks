@@ -2,6 +2,7 @@ import pygame as pg
 from pygame.locals import *
 import random
 from array import *
+import TEST
 
 #Colors
 color_background = (0, 0, 0)

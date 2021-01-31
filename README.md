@@ -18,8 +18,6 @@ After placing the cards on the grids, press the button "check". This will genera
 
 
 ## Future work - Stuff we would like to do but did not have enought time
--Creating an option such that gates can also act on the first qubit
-
--Omitting gate combinations that might result in the qubit not being changed at all
-
--Omitting entangled states, which cannot be represented by a sphere
+1.Creating an option such that gates can also act on the first qubit
+2.Omitting gate combinations that might result in the qubit not being changed at all
+3.Omitting entangled states, which cannot be represented by a sphere

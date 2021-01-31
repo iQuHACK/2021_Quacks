@@ -2,7 +2,9 @@ import pygame as pg
 from pygame.locals import *
 import random
 from array import *
-import TEST
+
+
+from TEST import quantum_gen
 
 #Colors
 color_background = (0, 0, 0)
@@ -66,13 +68,13 @@ def menu_principal():
         pg.display.update()
 
 def juego():
-    isRunning = True  
+    isRunning = True
 
-    card1 = pg.image.load('sprites/sprite1.png').convert()
-    card2 = pg.image.load('sprites/sprite2.png').convert()
-    card3 = pg.image.load('sprites/sprite3.png').convert()
-    card4 = pg.image.load('sprites/sprite4.png').convert()
-    card5 = pg.image.load('sprites/sprite5.png').convert()
+    nrand = quantum_gen()
+    card1 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
+    card2 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
+    card3 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
+    card4 = pg.image.load('sprites/sprite' + str(nrand[0]) + '.png').convert()
 
     #randomizar -> card[]
     card = [card1, card2, card3, card4, card5]

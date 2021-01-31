@@ -6,6 +6,8 @@ The premise is simple, once the game starts, a quantum circuit will be executed,
 
 Once you run the game, you will get: *mostrar fotos*
 
+![QntmMysteryFlow.PNG](https://github.com/iQuHACK/2021_Quacks/blob/dev/sprites/QntmMysteryFlow.PNG)
+
 Future work
 -Creating an option such that gates can also act on the first qubit
 -Omitting gate combinations that might result in the qubit not being changed at all

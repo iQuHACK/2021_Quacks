@@ -7,12 +7,10 @@ from qiskit.visualization import plot_state_city, plot_bloch_multivector
 from qiskit.visualization import plot_state_paulivec, plot_state_hinton
 from qiskit.visualization import plot_state_qsphere
 
-def rand_gen():
+def quantum_sim(sphere='sprites/out.png', circuit='sprites/out2.png'):
     n = np.linspace(0,3,4) #Total amount of different quantum gates
     nrand = np.random.randint(0,4,4) #Random generated identifiers for the quantum gates
-    return nrand
 
-def quantum_sim(nrand, sphere='sprites/out.png', circuit='sprites/out2.png'):
     #Simulator = Aer.get_backend('qasm_simulator')
     circuit = QuantumCircuit(2,2)
 
@@ -41,3 +39,5 @@ def quantum_sim(nrand, sphere='sprites/out.png', circuit='sprites/out2.png'):
     #print(statevector)
     plot_bloch_multivector(statevector).savefig(sphere)
     circuit.draw(output='mpl').savefig(circuit)
+
+    return nrand

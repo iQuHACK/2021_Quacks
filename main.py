@@ -80,8 +80,7 @@ def juego():
 
     connection = pg.Rect(10, height-320-126-5, 1000, 10)
 
-    nrand = rand_gen()
-    quantum_sim(nrand)
+    nrand = quantum_sim()
     sphere = pg.image.load('sprites/out.png')
     sphere = pg.transform.scale(sphere, (300, 150))
     sphere = sphere.convert()

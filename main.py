@@ -71,9 +71,10 @@ def juego():
     card2 = pg.image.load('sprites/sprite2.png').convert()
     card3 = pg.image.load('sprites/sprite3.png').convert()
     card4 = pg.image.load('sprites/sprite4.png').convert()
+    card5 = pg.image.load('sprites/sprite5.png').convert()
 
     #randomizar -> card[]
-    card = [card1, card2, card3, card4]
+    card = [card1, card2, card3, card4, card5]
     random.shuffle(card)
 
     rect1 = card[0].get_rect()
